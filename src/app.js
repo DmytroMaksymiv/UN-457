@@ -1,8 +1,12 @@
-var a =1
+const a = 1;
 
-function foo ( name ) {
-    var lastName=name
+function foo(name) {
+  const lastName = name;
+  return lastName;
 }
 
-varx=200;
-console.log(x)
+const x = 200;
+
+foo('denis');
+
+console.log(x, a);
