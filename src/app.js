@@ -7,6 +7,19 @@ function foo(name) {
 
 const x = 200;
 
-foo('denis');
+foo("denis");
 
+// eslint-disable-next-line no-console
 console.log(x, a);
+
+console.log(window);
+
+const arrow = (y) => y + 1;
+
+arrow(2);
+
+const obj = {
+  name: "den",
+};
+
+const name = obj.name;
