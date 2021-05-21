@@ -14,6 +14,8 @@ console.log(x, a);
 
 console.log(window);
 
+console.log(window);
+
 const arrow = (y) => y + 1;
 
 arrow(2);
