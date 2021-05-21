@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --color"
   },
@@ -22,16 +23,18 @@
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{  
+  "lint-staged": {
     "*.js": [
       "npm run lint:fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "eslint-config-standard": "^16.0.2"
   }
 }
